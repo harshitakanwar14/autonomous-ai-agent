@@ -1,0 +1,28 @@
+
+# Environment variables and secrets
+.env
+.env.*
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+
+# IDE settings
+.vscode/
+
+# Generated database
+*.db
+*.sqlite
+*.sqlite3
+
+# Temporary files
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
