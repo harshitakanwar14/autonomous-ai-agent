@@ -2,7 +2,5 @@ streamlit
 google-genai
 python-dotenv
 pydantic
-requests
-beautifulsoup4
 pytest
 ddgs

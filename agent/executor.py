@@ -43,16 +43,7 @@ class AgentExecutor:
                 )
 
             # Execute the selected tool
-            result = self.registry.execute(
-                tool_name,
-                arguments
-            )
-
-            return {
-                "success": True,
-                "tool": tool_name,
-                "result": result
-            }
+            return self.registry.execute(tool_name, arguments)
 
         except Exception as error:
 
