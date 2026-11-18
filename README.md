@@ -20,7 +20,7 @@ python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
 
-Create a `.env` file with your key (get one at https://aistudio.google.com):
+Copy `.env.example` to `.env` and add your key (free at https://aistudio.google.com/apikey):
 
 ```env
 GEMINI_API_KEY=your_api_key_here

@@ -3,7 +3,17 @@ import time
 import uuid
 from pathlib import Path
 
+import os
+
 import streamlit as st
+from dotenv import load_dotenv
+
+load_dotenv()
+if not os.getenv("GEMINI_API_KEY"):
+    st.error("GEMINI_API_KEY is missing.")
+    st.markdown("Copy `.env.example` to `.env`, add your free key from "
+                "[Google AI Studio](https://aistudio.google.com/apikey), then restart the app.")
+    st.stop()
 
 from agent.planner import AgentPlanner
 from agent.brain import AgentBrain
